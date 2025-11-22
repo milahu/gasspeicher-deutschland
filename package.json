@@ -1,0 +1,22 @@
+{
+  "name": "gasspeicher-deutschland",
+  "version": "1.0.0",
+  "description": "Gasspeicher Deutschland Füllstände",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "uplot": "*",
+    "solid-js": "*",
+    "solid-devtools": "*",
+    "vite": "*",
+    "vite-plugin-solid": "*"
+  },
+  "dependencies": {
+  }
+}
