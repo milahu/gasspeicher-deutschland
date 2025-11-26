@@ -17,6 +17,6 @@ fi
 
 npm run build
 
-git add .
+git add daten.csv dist/
 
 ./scripts/git-commit.py --date-as-message --no-edit
