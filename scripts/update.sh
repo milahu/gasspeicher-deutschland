@@ -3,8 +3,9 @@
 set -eux
 
 ./daten.csv.sh
+./daten2.csv.sh
 
-if ! git status --porcelain | grep -q -x '^ M daten.csv'; then
+if ! git status --porcelain | grep -q -x -E '^ M daten[0-9]*\.csv' then
   echo "already up-to-date"
   exit
 fi
@@ -17,6 +18,6 @@ fi
 
 npm run build
 
-git add daten.csv dist/
+git add daten*.csv dist/
 
 ./scripts/git-commit.py --date-as-message --no-edit
