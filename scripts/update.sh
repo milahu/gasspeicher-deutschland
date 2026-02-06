@@ -5,7 +5,7 @@ set -eux
 ./daten.csv.sh
 ./daten2.csv.sh
 
-if ! git status --porcelain | grep -q -x -E '^ M daten[0-9]*\.csv' then
+if ! git status --porcelain | grep -q -x -E '^ M daten[0-9]*\.csv'; then
   echo "already up-to-date"
   exit
 fi
