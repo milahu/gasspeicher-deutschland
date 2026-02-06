@@ -9,9 +9,11 @@ set -u
 # yeah i know, i should not publish my apikey...
 api_key=ef89a7749d67129d7ba29e0548f7fb22
 
+set -x
 command -v curl
 command -v jq
 command -v csvformat
+set +x
 
 #date1=$(date +'%Y-%m-%d' -d '-1month')
 #date1=$(date +'%Y-%m-%d' -d '-1year') # 2 pages
